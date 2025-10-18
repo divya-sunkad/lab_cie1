@@ -1,10 +1,18 @@
 numbers=list(map(int,input("enter numbers separated by spaces:"),split()))
 even_count=0
 odd_count=0
+prime_count
 for n in numbers:
     if n %2==0:
         even_count+=1
     else:
         odd_count+=1
+    if n>1:
+        for 1 in range(2,int(n**0.5)+1):
+            if n %1==0:
+                break
+            else:
+                prime_count+=1
 print("even numbers:",even_count)
 print("odd numbers:",odd_count)
+print("prime numbers:",prime_count)
